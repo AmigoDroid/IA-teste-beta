@@ -20,7 +20,7 @@ class Matrix{
         matrix.map((elm,i,j)=>{
             return arr[i];
         })
-       //matrix.print();
+       return matrix;
     }
 
     print(){
@@ -29,9 +29,22 @@ class Matrix{
     }
     rondomizi(){
         //gera numeros randomicos
-        this.map((elm,i,j) =>{
+        Matrix.map((elm,i,j) =>{
             return Math.random() +2 - 1;
         });
+    }
+    static map(A,func){
+        //retorna uma array
+        let matrix = new Matrix(A.rows,B.cols);
+
+        matrix.data = matrix.data.map((arr,i)=>{
+          return  arr.map((num,j)=>{
+              return func(num,i,j);
+            })
+           // console.log(arr);
+
+        })
+        return matrix;
     }
     map(func){
         //retorna uma array
@@ -39,8 +52,6 @@ class Matrix{
           return  arr.map((num,j)=>{
               return func(num,i,j);
             })
-           // console.log(arr);
-
         })
         return this;
     }
