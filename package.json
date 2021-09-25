@@ -1,0 +1,19 @@
+{
+  "name": "ia-teste-beta",
+  "version": "1.0.0",
+  "description": "inteligencia artificial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmigoDroid/IA-teste-beta.git"
+  },
+  "author": "Luciano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmigoDroid/IA-teste-beta/issues"
+  },
+  "homepage": "https://github.com/AmigoDroid/IA-teste-beta#readme"
+}
